@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+      box-sizing: border-box;
+		  font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .navibar{
+      background-color: #000000;
+      width: 100%;
+      height: 30px;
+    }
+
+    .navibar2{
+      background-color: #FFFFFF;
+      width: 100%;
+      height: 110px;
+    }
+
+    .navibar2 #logo{
+      float: left;
+      height: 110px;
+      line-height:110px;
+      margin-left: 100px;
+    }
+
+    .navibar2 #logo img{
+      vertical-align: middle;
+    }
+
+    .navibar2 #menu1{
+      list-style:none;
+      padding:0;
+      float: left;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 115px;
+      margin-right: 40px;
+    }
+
+    .navibar2 #menu1 li{
+      float: left;
+      margin-left:20px;
+      line-height:110px;
+    }
+
+    .navibar2 #menu1 li a {
+      font-size:15px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .navibar2 #menu2{
+      float:right;
+      list-style:none;
+      padding:0;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 100px;
+    }
+
+    .navibar2 #menu2 li{
+      float:left;
+      margin-left:20px;
+      line-height:110px;
+    }
+
+    .navibar2 #menu2 li a {
+      color:#383838;
+      font-size:13px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .navibar2 #menu2 li a img{
+      vertical-align: middle;
+    }
+
+    .header{
+      vertical-align: middle;
+    }
+
+    .head{
+        font-size:40px;
+        font-weight: bold;
+        color:#000000;
+        margin-top:80px;
+        margin-bottom:40px;
+        text-align: center;
+    }
+
+    .BESTITEM-list{
+        margin-left:auto;
+        margin-right:auto;
+        width: 1100px;
+    }
+
+    .BESTITEM {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    width: 343px;
+    height: 474px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: 1.5px solid #000000;
+    }
+
+    .BESTITEM-text1{
+        font-size:16px;
+        font: weight 400px;;
+        color:#000000;
+        margin-top:35px;
+        margin-bottom:10px;
+    }
+
+    .BESTITEM-text2{
+        font-size:13px;
+        font-weight: 400px;
+        color:#878787;
+        margin-bottom:35px;
+    }
+
+    .clearfix{
+      clear:both;
+    }
+
+    .header2{
+      vertical-align: middle;
+    }
+
+    .MDPICK-list{
+        margin-left:auto;
+        margin-right:auto;
+        width: 1100px;
+    }
+
+    .MDPICK{
+        text-align:center;
+        display:block;
+        text-decoration:none;
+        width:255px;
+        margin-left:10px;
+        margin-right:10px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        float: left;
+    }
+
+    .MDPICK-text1{
+        font-size:16px;
+        font-weight: bold;
+        color:#000000;
+        margin-top:35px;
+        margin-bottom:10px;
+    }
+
+    .MDPICK-text2{
+        font-size:13px;
+        font-weight: 400px;
+        color:#878787;
+        margin-bottom:35px;
+    }
+
+    .MONTHLYITEM-list{
+        margin-left:auto;
+        margin-right:auto;
+        width: 1280px;
+        margin-bottom: 105px;
+    }
+
+    .MONTHLYITEM{
+        text-align:center;
+        display:block;
+        text-decoration:none;
+        width:345px;
+        margin-left:10px;
+        margin-right:10px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        float: left;
+    }
+
+    .MONTHLYITEM-text1{
+        font-size:16px;
+        font-weight: bold;
+        color:#000000;
+        margin-top:15px;
+        margin-bottom:10px;
+    }
+
+    .MONTHLYITEM-text2{
+        font-size:13px;
+        font-weight: 400px;
+        color:#878787;
+        margin-bottom:40px;
+    }
+
+    .footer{
+      background-color: #E9E9E9;
+      width: 100%;
+      height: 360px;
+    }
+
+    .footer1 {
+      text-align:left;
+      display:block;
+      text-decoration:none;
+      float:left;
+      margin-left:100px;
+    }
+
+    .footer2 {
+      text-align:left;
+      display:block;
+      text-decoration:none;
+      float:right;
+      margin-right:100px;
+      margin-left: 50px;
+    }
+
+    .footer-name{
+      margin-top:20px;
+      margin-bottom:20px;
+      color:#000000;
+      font-size:16px;
+      font-weight:bold;
+    }
+
+    .footer-name2{
+      margin-top:50px;
+      margin-bottom:20px;
+      color:#000000;
+      font-size:16px;
+      font-weight:bold;
+    }
+
+    .footer-content1{
+      margin-top:20px;
+      margin-bottom:0px;
+      color:#878787;
+      font-size:12px;
+      font-weight:bold;
+    }
+
+    .footer-content2{
+      margin-top:20px;
+      margin-bottom:10px;
+      color:#878787;
+      font-size:12px;
+    }
+</style>
+
+<body>
+    <div class="navibar">
+    </div>
+
+    <div class="navibar2">
+      
+      <a href="#" id="logo">
+        <img src="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.6435-9/37397462_547060342375506_7232356701737844736_n.jpg?stp=cp0_dst-jpg_e15_q65_s851x315&_nc_cat=103&ccb=1-7&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=ByvY6k6_HPoAX8O07gW&_nc_ht=scontent-ssn1-1.xx&oh=00_AfA-azqKJJff9veBx0U2ndN9k9wV1bDbaglEXbCkvDvqgA&oe=64B4D027" height=110">
+      </a>
+
+      <ul id="menu1">
+        <li><a href="홈.html"><span style="color: #383838">홈</span></a></li>
+        <li><a href="모든제품.html"><span style="color: #B6B6B6">모든 제품</span></a></li>
+        <li><a href="공간별쇼핑하기.html"><span style="color: #B6B6B6">공간별 쇼핑하기</span></a></li>
+        <li><a href="SERIES+.html"><span style="color: #B6B6B6">SERIES+</span></a></li>
+        <li><a href="#"><span style="color: #B6B6B6">STORY+</span></a></li>
+        <li><a href="#"><span style="color: #B6B6B6">COMMUNITY+</span></a></li>
+      </ul>
+      
+      <ul id="menu2">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">장바구니</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">
+          <img src="https://cdn-icons-png.flaticon.com/128/149/149852.png" height="16">
+        </a></li>
+        <li><a href="#">
+          <img src="https://cdn-icons-png.flaticon.com/128/3856/3856832.png" height="19">
+        </a></li>
+      </ul>
+
+      <div class="clearfix"></div>
+      
+    </div>
+    
+    <div class="header">
+      <img src="https://img.freepik.com/free-photo/3d-rendering-modern-dining-room-and-living-room-with-luxury-decor_105762-2234.jpg?w=1380&t=st=1687294357~exp=1687294957~hmac=fa57a575e74dd3d5ed5b0f67e49e327a1e2190fdd20cef4d2e0088eaf519fc1a" width="100%">
+    </div>
+
+    <div class="head">BEST ITEM</div>
+
+    <div class=BESTITEM-list">
+        <a href="#" class="BESTITEM">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/13/11/27/496/496_add5_074.jpg" width="318">
+            <div class="BESTITEM-text1">스카겐 3단 콘솔</div>
+            <div class="BESTITEM-text2">289,000원</div>
+        </a>
+        <a href="#" class="BESTITEM">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/13/03/27/436/436_add5_010.jpg" width="318">
+            <div class="BESTITEM-text1">스카겐 6칸 와이드 서랍장</div>
+            <div class="BESTITEM-text2">399,000원</div>
+        </a>
+        <a href="#" class="BESTITEM">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000486/1000000486_add5_034.jpg" width="318">
+            <div class="BESTITEM-text1">덴 피카 월 캐비닛</div>
+            <div class="BESTITEM-text2">699,000원</div>
+        </a>
+        <a href="#" class="BESTITEM">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000489/1000000489_add5_065.jpg" width="318">
+            <div class="BESTITEM-text1">덴 피카 컬렉션 수납장 A</div>
+            <div class="BESTITEM-text2">790,000원</div>
+        </a>
+        <a href="#" class="BESTITEM">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000490/1000000490_add5_035.jpg" width="318">
+            <div class="BESTITEM-text1">덴 피카 지류 수납장</div>
+            <div class="BESTITEM-text2">795,000원</div>
+        </a>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="header">
+        <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/editor/promotion/210525/special_sale_112926.jpg" width="100%">
+    </div>
+
+    <div class="head">MD PICK</div>
+
+    <div class="MDPICK-list">
+        <a href="#" class="MDPICK">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/skin/front/marshmallow_new_C/img/mimg/tab_banner01.jpg" width="255">
+            <div class="MDPICK-text1">CANE SERIES</div>
+            <div class="MDPICK-text2">휴양지에서의 낯선 설레임을 일상에 녹인<br> 케인 시리즈</div>
+        </a>
+        <a href="#" class="MDPICK">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/skin/front/marshmallow_new_C/img/mimg/tab_banner02.jpg" width="255">
+            <div class="MDPICK-text1">FIKA SERIES</div>
+            <div class="MDPICK-text2">일상 속의 휴식과 여유를 느낄 수 있는<br>  피카 시리즈</div>
+        </a>
+        <a href="#" class="MDPICK">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/skin/front/marshmallow_new_C/img/mimg/tab_banner03.jpg" width="255">
+            <div class="MDPICK-text1">BINTRO SERIES</div>
+            <div class="MDPICK-text2">부드럽고 진한 투톤 컬러의<br>  빈트로 시리즈</div>
+        </a>
+        <a href="#" class="MDPICK">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/skin/front/marshmallow_new_C/img/mimg/tab_banner04.jpg" width="255">
+            <div class="MDPICK-text1">NEU SKGEN SERIES</div>
+            <div class="MDPICK-text2">두가지 컬러톤 조합의 클래식한<br>  노이스카겐 시리즈</div>
+        </a>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="head">MONTHLY ITEM</div>
+
+    <div class=MONTHLYITEM-list">
+        <a href="#" class="MONTHLYITEM">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/21/10/40//1000000409/1000000409_main_062.jpg" width="345">
+            <div class="MONTHLYITEM-text1">세토 쉘프 캐비닛</div>
+            <div class="MONTHLYITEM-text2">495,000원</div>
+        </a>
+        <a href="#" class="MONTHLYITEM">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/21/10/40//1000000401/1000000401_main_076.jpg" width="345">
+            <div class="MONTHLYITEM-text1">세토 디바이더 수납장</div>
+            <div class="MONTHLYITEM-text2">695,000원</div>
+        </a>
+        
+        <a href="#" class="MONTHLYITEM">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/21/10/40//1000000407/1000000407_main_010.jpg" width="345">
+            <div class="MONTHLYITEM-text1">세토 더블 캐비닛</div>
+            <div class="MONTHLYITEM-text2">295,000원</div>
+        </a>
+        <a href="#" class="MONTHLYITEM">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/21/10/40//1000000404/1000000404_main_085.jpg" width="345">
+            <div class="MONTHLYITEM-text1">세토 테이블</div>
+            <div class="MONTHLYITEM-text2">406,000원원</div>
+        </a>
+        <a href="#" class="MONTHLYITEM">
+            <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/21/10/40//1000000413/1000000413_main_02.jpg" width="345">
+            <div class="MONTHLYITEM-text1">세토 8칸 서랍장</div>
+            <div class="MONTHLYITEM-text2">545,000원</div>
+        </a>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="footer">
+      
+        <a href="#" class="footer1">
+          <div class="footer-name">오프라인 스토어</div>
+          <div class="footer-content2">
+            홈43 본점(용인점) : 경기도 용인시 처인구 모현읍 포은대로 1136 (031 - 767 - 4626<br>
+            홈43 경인점 : 인천광역시 서구 오류로 8 (070 - 7730 - 7081<br>
+            홈43 충정로점 : 서울시 서대문구 신촌로 329 (충정로 35-10) (02 - 362 - 3121<br>
+            홈43 울산 양산점 : 경남 양산시 평산중앙3길 22 다온빌딩 (055 - 365 - 8990<br>
+            홈43 제주점 : 제주시 청사로 71 (정부종합청사부근) (064 - 723 - 1137<br>
+            홈43 서귀포점 : 서귀포시 문부로 11번길 16-1 (064 - 733 – 1136<br>
+          </div>
+          <div class="footer-content2">
+            회사명 : 동원교역 주소 : 경기도 광주시 오포읍 오포로 593-21 대표전화 : 031-767-4602<br>
+            BUSINESS LICENSE : 126-86-41030 [사업자번호조회] MAIL ORDER LICENSE : 2011-경기광주-0290 PRIVACY OFFICER : 박세나 CEO : 손봉기
+          </div>
+        </a>
+  
+        <a href="#" class="footer2">
+          <div class="footer-name">입금정보</div>
+          <div class="footer-content1">
+            기업은행 220. 062483.04.011
+          </div>
+          <div class="footer-content2">
+            예금주 : (주)동원교역
+          </div>
+          <div class="footer-name2">상품문의</div>
+          <div class="footer-content1">
+            FAQ
+          </div>
+        </a>
+  
+        <a href="#" class="footer2">
+          <div class="footer-name">고객센터</div>
+          <div class="footer-content1">
+            대표전화 031. 767. 4602
+          </div>
+          <div class="footer-content2">
+            평일 AM 10:00-16:00<br>
+            (점심시간 12:00 – 14:00)<br>
+            (*주말 공휴일 휴무)<br>
+          </div>
+        </a>
+              
+      </div>
+
+</body>
+</html>

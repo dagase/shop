@@ -1,0 +1,566 @@
+<html>
+  <head>
+    <title>SimpleShop</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+
+  <style>
+    * {
+      box-sizing: border-box;
+		  font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .navibar{
+      background-color: #000000;
+      width: 100%;
+      height: 30px;
+    }
+
+    .navibar2{
+      background-color: #FFFFFF;
+      width: 100%;
+      height: 110px;
+    }
+
+    .navibar2 #logo{
+      float: left;
+      height: 110px;
+      line-height:110px;
+      margin-left: 100px;
+    }
+
+    .navibar2 #logo img{
+      vertical-align: middle;
+    }
+
+    .navibar2 #menu1{
+      list-style:none;
+      padding:0;
+      float: left;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 115px;
+      margin-right: 40px;
+    }
+
+    .navibar2 #menu1 li{
+      float: left;
+      margin-left:20px;
+      line-height:110px;
+    }
+
+    .navibar2 #menu1 li a {
+      font-size:15px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .navibar2 #menu2{
+      float:right;
+      list-style:none;
+      padding:0;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 100px;
+    }
+
+    .navibar2 #menu2 li{
+      float:left;
+      margin-left:20px;
+      line-height:110px;
+    }
+
+    .navibar2 #menu2 li a {
+      color:#383838;
+      font-size:13px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .navibar2 #menu2 li a img{
+      vertical-align: middle;
+    }
+
+    .header{
+      vertical-align: middle;
+    }
+
+    .products h3{
+      font-size:36px;
+      color:#545454;
+      margin-top:80px;
+      margin-bottom:60px;
+      text-align:center;
+      font-weight: bold;
+    }
+
+    .products-menulist{
+      width:698px;
+      margin-left:auto;
+      margin-right:auto;
+      margin-bottom:65px;
+    }
+
+    .products-menu1{
+      text-align:center;
+      width:42px;
+      height:27px;
+      display:block;
+      text-decoration:none;
+      float:left;
+      margin-left: 15px;
+      margin-right: 15px;
+      border-bottom:1.5px solid black ;
+    }
+
+    .products-menu2{
+      text-align:center;
+      height:27px;
+      display:block;
+      text-decoration:none;
+      float:left;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    .productsmenu1{
+      font-size:15px;
+      color:#383838;
+      text-align:center;
+      font-weight:bold;
+    }
+
+    .productsmenu2{
+      font-size:15px;
+      color:#B6B6B6;
+      text-align:center;
+      font-weight:bold;
+    }
+
+    .product-list{
+      width:1100px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .product {
+      text-align:center;
+      width:255px;
+      display:block;
+      color:#545454;
+      text-decoration:none;
+      float:left;
+      margin-left:10px;
+      margin-right:10px;
+      margin-top: 60px;
+    }
+
+    .product-name{
+      margin-top:20px;
+      margin-bottom:10px;
+      color:#000000;
+      font-size:20px;
+    }
+
+    .product-price{
+      margin-bottom:80px;
+      color:#878787;
+      font-size:15px;
+    }
+
+    .clearfix{
+      clear:both;
+    }
+
+    .number-list{
+      width:460px;
+      margin-left:auto;
+      margin-right:auto;
+      margin-bottom: 80px;
+    }
+
+    .number1 {
+      text-align:center;
+      width:36px;
+      display:block;
+      background-color:#808080;
+      text-decoration:none;
+      float:left;
+      margin-left:5px;
+      margin-right:5px;
+    }
+
+    .number2 {
+      text-align:center;
+      width:36px;
+      display:block;
+      background-color:#EDEAEA;
+      text-decoration:none;
+      float:left;
+      margin-left:5px;
+      margin-right:5px;
+    }
+
+    .number-1{
+      font-size:24px;
+      color:#E8E8E8;
+      text-align:center;
+    }
+
+    .number-2{
+      font-size:24px;
+      color:#808080;
+      text-align:center;
+    }
+
+    .footer{
+      background-color: #E9E9E9;
+      width: 100%;
+      height: 360px;
+    }
+
+    .footer1 {
+      text-align:left;
+      display:block;
+      text-decoration:none;
+      float:left;
+      margin-left:100px;
+    }
+
+    .footer2 {
+      text-align:left;
+      display:block;
+      text-decoration:none;
+      float:right;
+      margin-right:100px;
+      margin-left: 50px;
+    }
+
+    .footer-name{
+      margin-top:20px;
+      margin-bottom:20px;
+      color:#000000;
+      font-size:16px;
+      font-weight:bold;
+    }
+
+    .footer-name2{
+      margin-top:50px;
+      margin-bottom:20px;
+      color:#000000;
+      font-size:16px;
+      font-weight:bold;
+    }
+
+    .footer-content1{
+      margin-top:20px;
+      margin-bottom:0px;
+      color:#878787;
+      font-size:12px;
+      font-weight:bold;
+    }
+
+    .footer-content2{
+      margin-top:20px;
+      margin-bottom:10px;
+      color:#878787;
+      font-size:12px;
+    }
+
+  </style>
+
+  <body>
+    <div class="navibar">
+    </div>
+
+    <div class="navibar2">
+      
+      <a href="#" id="logo">
+        <img src="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.6435-9/37397462_547060342375506_7232356701737844736_n.jpg?stp=cp0_dst-jpg_e15_q65_s851x315&_nc_cat=103&ccb=1-7&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=ByvY6k6_HPoAX8O07gW&_nc_ht=scontent-ssn1-1.xx&oh=00_AfA-azqKJJff9veBx0U2ndN9k9wV1bDbaglEXbCkvDvqgA&oe=64B4D027" height=110">
+      </a>
+
+      <ul id="menu1">
+        <li><a href="홈.html"><span style="color: #B6B6B6">홈</span></a></li>
+        <li><a href="모든제품.html"><span style="color: #383838">모든 제품</span></a></li>
+        <li><a href="공간별쇼핑하기.html"><span style="color: #B6B6B6">공간별 쇼핑하기</span></a></li>
+        <li><a href="SERIES+.html"><span style="color: #B6B6B6">SERIES+</span></a></li>
+        <li><a href="#"><span style="color: #B6B6B6">STORY+</span></a></li>
+        <li><a href="#"><span style="color: #B6B6B6">COMMUNITY+</span></a></li>
+      </ul>
+      
+      <ul id="menu2">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">장바구니</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">
+          <img src="https://cdn-icons-png.flaticon.com/128/149/149852.png" height="16">
+        </a></li>
+        <li><a href="#">
+          <img src="https://cdn-icons-png.flaticon.com/128/3856/3856832.png" height="19">
+        </a></li>
+      </ul>
+      
+    </div>
+    
+    <div class="header">
+      <img src="https://img.freepik.com/free-photo/corporate-building-with-minimalist-empty-room_23-2148727505.jpg?w=1380&t=st=1687083138~exp=1687083738~hmac=69c848603c9bca4c5f3fa10a9ba544e16e367153a714a689fb51815064d252eb" width="100%">
+    </div>
+    
+    <div class="products">
+      <h3>모든 제품</h3>
+      
+      <div class="products-menulist">
+        <a href="#" class="products-menu1">
+          <div class="productsmenu1">컬렉션</div>
+        </a>
+        <a href="#" class="products-menu2">
+          <div class="productsmenu2">수납장</div>
+        </a>
+        <a href="#" class="products-menu2">
+          <div class="productsmenu2">사이드 테이블</div>
+        </a>
+        <a href="#" class="products-menu2">
+          <div class="productsmenu2">화장대</div>
+        </a>
+        <a href="#" class="products-menu2">
+          <div class="productsmenu2">테이블</div>
+        </a>
+        <a href="#" class="products-menu2">
+          <div class="productsmenu2">소파/의자</div>
+        </a>
+        <a href="#" class="products-menu2">
+          <div class="productsmenu2">침대</div>
+        </a>
+        <a href="#" class="products-menu2">
+          <div class="productsmenu2">커머셜</div>
+        </a>
+        <a href="#" class="products-menu2">
+          <div class="productsmenu2">홈데코</div>
+        </a>
+      </div>
+      
+      <div class="product-list">
+        
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/23/05/22/1000000503/register_detail_031.jpg" width="255">
+          <div class="product-name">오르트 슬라이딩 유리장</div>
+          <div class="product-price">573,000원</div>
+        </a>
+      
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/23/05/22/1000000502/register_detail_096.jpg" width="255">
+          <div class="product-name">오르트 3단 수납장</div>
+          <div class="product-price">535,000원</div>
+        </a>
+      
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/23/05/22/1000000501/register_detail_079.jpg" width="255">
+          <div class="product-name">오르트 유리 수납장</div>
+          <div class="product-price">569,000원</div>
+        </a>
+      
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/23/05/22/1000000500/register_detail_036.jpg" width="255">
+          <div class="product-name">오르트 미니 선반 장식장</div>
+          <div class="product-price">155,000원</div>
+        </a>
+
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/23/05/22/1000000499/register_detail_075.jpg" width="255">
+          <div class="product-name">오르트 창문형 스탠딩 거울</div>
+          <div class="product-price">109,000원</div>
+        </a>
+      
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/23/05/22/1000000498/register_detail_037.jpg" width="255">
+          <div class="product-name">오르트 미니 쇼케이스 박스</div>
+          <div class="product-price">125,000원</div>
+        </a>
+      
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000492/register_detail_069.jpg" width="255">
+          <div class="product-name">덴 피카 멀티 콘솔</div>
+          <div class="product-price">439,000원</div>
+        </a>
+      
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000491/register_detail_084.jpg" width="255">
+          <div class="product-name">덴 피카 확장형 수납 책상</div>
+          <div class="product-price">650,000원</div>
+        </a>
+
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000490/register_detail_063.jpg" width="255">
+          <div class="product-name">덴 피카 지류 수납장</div>
+          <div class="product-price">795,000원</div>
+        </a>
+
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000489/register_detail_010.jpg" width="255">
+          <div class="product-name">덴 피카 컬렉션 수납장 A</div>
+          <div class="product-price">790,000원</div>
+        </a>
+
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000488/register_detail_078.jpg" width="255">
+          <div class="product-name">덴 피카 컬렉션 수납장 B</div>
+          <div class="product-price">579,000원</div>
+        </a>
+
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000487/register_detail_071.jpg" width="255">
+          <div class="product-name">덴 피카 컬렉션 수납장 C</div>
+          <div class="product-price">579,000원</div>
+        </a>
+
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000486/register_detail_018.jpg" width="255">
+          <div class="product-name">덴 피카 월 캐비닛</div>
+          <div class="product-price">699,000원</div>
+        </a>
+
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000485/register_detail_012.jpg" width="255">
+          <div class="product-name">덴 피카 주방 수납장</div>
+          <div class="product-price">1,190,000원</div>
+        </a>
+
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000484/register_detail_063.jpg" width="255">
+          <div class="product-name">덴 피카 주류 장식장</div>
+          <div class="product-price">699,000원</div>
+        </a>
+
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000483/register_detail_066.jpg" width="255">
+          <div class="product-name">덴 피카 체어</div>
+          <div class="product-price">210,000원</div>
+        </a>
+
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000482/register_detail_090.jpg" width="255">
+          <div class="product-name">덴 피카 미니 북 쉘프</div>
+          <div class="product-price">250,000원</div>
+        </a>
+
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000481/register_detail_023.jpg" width="255">
+          <div class="product-name">덴 피카 사이드 테이블</div>
+          <div class="product-price">225,000원</div>
+        </a>
+
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000480/register_detail_040.jpg" width="255">
+          <div class="product-name">덴 피카 벽 거울</div>
+          <div class="product-price">139,000원</div>
+        </a>
+
+        <a href="#" class="product">
+          <img src="https://cdn-pro-web-250-211.cdn-nhncommerce.com/otwotr4590_godomall_com/data/goods/22/12/51/1000000479/register_detail_077.jpg" width="255">
+          <div class="product-name">덴 피카 책상 세트</div>
+          <div class="product-price">799,000원</div>
+        </a>
+    
+        <div class="clearfix"></div>
+        
+      </div>
+
+      <div class="number-list">
+        
+        <a href="#" class="number1">
+          <div class="number-1">1</div>
+        </a>
+        
+        <a href="#" class="number2">
+          <div class="number-2">2</div>
+        </a>
+
+        <a href="#" class="number2">
+          <div class="number-2">3</div>
+        </a>
+
+        <a href="#" class="number2">
+          <div class="number-2">4</div>
+        </a>
+
+        <a href="#" class="number2">
+          <div class="number-2">5</div>
+        </a>
+
+        <a href="#" class="number2">
+          <div class="number-2">6</div>
+        </a>
+
+        <a href="#" class="number2">
+          <div class="number-2">7</div>
+        </a>
+
+        <a href="#" class="number2">
+          <div class="number-2">8</div>
+        </a>
+
+        <a href="#" class="number2">
+          <div class="number-2">9</div>
+        </a>
+
+        <a href="#" class="number2">
+          <div class="number-2">10</div>
+        </a>
+
+      </div>
+      
+
+    </div>
+    
+    <div class="footer">
+      
+      <a href="#" class="footer1">
+        <div class="footer-name">오프라인 스토어</div>
+        <div class="footer-content2">
+          홈43 본점(용인점) : 경기도 용인시 처인구 모현읍 포은대로 1136 (031 - 767 - 4626<br>
+          홈43 경인점 : 인천광역시 서구 오류로 8 (070 - 7730 - 7081<br>
+          홈43 충정로점 : 서울시 서대문구 신촌로 329 (충정로 35-10) (02 - 362 - 3121<br>
+          홈43 울산 양산점 : 경남 양산시 평산중앙3길 22 다온빌딩 (055 - 365 - 8990<br>
+          홈43 제주점 : 제주시 청사로 71 (정부종합청사부근) (064 - 723 - 1137<br>
+          홈43 서귀포점 : 서귀포시 문부로 11번길 16-1 (064 - 733 – 1136<br>
+        </div>
+        <div class="footer-content2">
+          회사명 : 동원교역 주소 : 경기도 광주시 오포읍 오포로 593-21 대표전화 : 031-767-4602<br>
+          BUSINESS LICENSE : 126-86-41030 [사업자번호조회] MAIL ORDER LICENSE : 2011-경기광주-0290 PRIVACY OFFICER : 박세나 CEO : 손봉기
+        </div>
+      </a>
+
+      <a href="#" class="footer2">
+        <div class="footer-name">입금정보</div>
+        <div class="footer-content1">
+          기업은행 220. 062483.04.011
+        </div>
+        <div class="footer-content2">
+          예금주 : (주)동원교역
+        </div>
+        <div class="footer-name2">상품문의</div>
+        <div class="footer-content1">
+          FAQ
+        </div>
+      </a>
+
+      <a href="#" class="footer2">
+        <div class="footer-name">고객센터</div>
+        <div class="footer-content1">
+          대표전화 031. 767. 4602
+        </div>
+        <div class="footer-content2">
+          평일 AM 10:00-16:00<br>
+          (점심시간 12:00 – 14:00)<br>
+          (*주말 공휴일 휴무)<br>
+        </div>
+      </a>
+            
+    </div>
+    
+  </body>
+  
+</html>
